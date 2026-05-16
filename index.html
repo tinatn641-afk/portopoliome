@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Tina</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            mahogany: {
+              dark: '#2C1810',
+              brown: '#4A2C1A',
+              wood: '#6F4E37',
+              soft: '#A67B5B',
+              cream: '#F3E5D7',
+            },
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    .glass {
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
+    }
+
+    .hover-card {
+      transition: all 0.4s ease;
+    }
+
+    .hover-card:hover {
+      transform: translateY(-10px);
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-[#2C1810] via-[#4A2C1A] to-black text-white font-sans">
+
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 w-full bg-mahogany-dark text-white shadow-lg z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+
+      <h1 class="text-2xl font-bold tracking-widest">
+        TINA
+      </h1>
+
+      <div class="hidden md:flex gap-6">
+        <a href="#beranda" class="hover:text-mahogany-soft transition">Beranda</a>
+        <a href="#tentang" class="hover:text-mahogany-soft transition">Tentang</a>
+        <a href="#pendidikan" class="hover:text-mahogany-soft transition">Pendidikan</a>
+        <a href="#pengalaman" class="hover:text-mahogany-soft transition">Pengalaman</a>
+        <a href="#hobi" class="hover:text-mahogany-soft transition">Hobi</a>
+        <a href="#proyek" class="hover:text-mahogany-soft transition">Proyek</a>
+        <a href="#kontak" class="hover:text-mahogany-soft transition">Kontak</a>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="beranda"
+    class="min-h-screen flex items-center justify-center bg-gradient-to-br from-mahogany-dark via-mahogany-brown to-black text-white">
+
+    <div class="text-center px-6">
+
+      <img
+  src="tinaa.png"
+  alt="Foto Tina"
+  class="w-48 h-48 rounded-full mx-auto border-4 border-mahogany-soft shadow-2xl mb-6 object-cover"
+/>
+
+      <h2 class="text-5xl md:text-6xl font-bold mb-4">
+        Tina
+      </h2>
+
+      <p class="text-2xl text-mahogany-soft mb-4">
+        Quality Control Assurance • Mahasiswa Teknik Informatika
+      </p>
+
+      <p class="max-w-2xl mx-auto text-lg mb-8 text-gray-200">
+        Mahasiswa aktif sekaligus Quality Control Assurance di PT. Maruichi Indonesia
+        yang memiliki ketelitian tinggi, disiplin, dan ketertarikan dalam
+        pengembangan teknologi web.
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-4">
+
+        <a href="#tentang"
+          class="bg-mahogany-soft hover:bg-transparent hover:text-mahogany-dark px-8 py-3 rounded-full font-semibold transition-all duration-300 shadow-2xl">
+          Lihat Portofolio
+        </a>
+
+        <a href="cv-tina.pdf"
+          download
+          class="border border-white hover:bg-transparent hover:text-mahogany-dark px-8 py-3 rounded-full font-semibold transition-all duration-300">
+
+          <i class="fa-solid fa-download mr-2"></i>
+          Download CV
+
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TENTANG -->
+  <section id="tentang" class="py-20 bg-transparent">
+    <div class="container mx-auto px-6">
+
+      <h2 class="text-4xl font-bold text-center mb-12">
+        Tentang Saya
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+
+     <img
+  src="tinaa.png"
+  alt="Foto Tina"
+  class="w-full h-[500px] object-cover rounded-3xl shadow-2xl"
+/>
+
+        <div>
+
+          <p class="text-lg leading-relaxed mb-6">
+            Saya adalah Tina, seorang mahasiswa Teknik Informatika di
+            STTI Sony Sugema yang juga bekerja sebagai Quality Control Assurance
+            di PT. Maruichi Indonesia.
+          </p>
+
+          <p class="text-lg leading-relaxed mb-6">
+            Saya memiliki minat dalam pengembangan website,
+            komunikasi publik, dan olahraga badminton.
+          </p>
+
+          <div class="grid grid-cols-2 gap-4">
+
+            <div class="glass p-4 rounded-xl shadow-lg">
+              <i class="fa-solid fa-check text-mahogany-soft mb-2"></i>
+              <p>Teliti & Detail</p>
+            </div>
+
+            <div class="glass p-4 rounded-xl shadow-lg">
+              <i class="fa-solid fa-check text-mahogany-soft mb-2"></i>
+              <p>Disiplin</p>
+            </div>
+
+            <div class="glass p-4 rounded-xl shadow-lg">
+              <i class="fa-solid fa-check text-mahogany-soft mb-2"></i>
+              <p>Komunikatif</p>
+            </div>
+
+            <div class="glass p-4 rounded-xl shadow-lg">
+              <i class="fa-solid fa-check text-mahogany-soft mb-2"></i>
+              <p>Web Development</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PENDIDIKAN -->
+  <section id="pendidikan" class="py-20 bg-transparent">
+
+    <div class="container mx-auto px-6">
+
+      <h2 class="text-4xl font-bold text-center mb-12">
+        Riwayat Pendidikan 🎓
+      </h2>
+
+      <div class="max-w-4xl mx-auto space-y-6">
+
+        <!-- SD -->
+        <div class="bg-transparent shadow-xl rounded-2xl p-6 border-l-8 border-mahogany-dark">
+
+          <h3 class="text-2xl font-bold">
+            SDN Karyamukti 2
+          </h3>
+
+          <p class="mb-4">
+            2010 - 2016
+          </p>
+
+          <a href="Ijazahsmk.jpg"
+            target="_blank"
+            class="inline-block bg-mahogany-dark text-white px-5 py-2 rounded-xl hover:bg-black transition">
+
+            <i class="fa-solid fa-file-pdf mr-2"></i>
+            Lihat Ijazah
+
+          </a>
+
+        </div>
+
+        <!-- SMP -->
+        <div class="bg-transparent shadow-xl rounded-2xl p-6 border-l-8 border-mahogany-brown">
+
+          <h3 class="text-2xl font-bold">
+            SMPN 1 Lemahabang
+          </h3>
+
+          <p class="mb-4">
+            2016 - 2019
+          </p>
+
+          <a href="Ijazahsmk.jpg"
+            target="_blank"
+            class="inline-block bg-mahogany-brown text-white px-5 py-2 rounded-xl hover:bg-black transition">
+
+            <i class="fa-solid fa-file-pdf mr-2"></i>
+            Lihat Ijazah
+
+          </a>
+
+        </div>
+
+        <!-- SMK -->
+        <div class="bg-transparent shadow-xl rounded-2xl p-6 border-l-8 border-mahogany-wood">
+
+          <h3 class="text-2xl font-bold">
+            SMK PGRI Telagasari
+          </h3>
+
+          <p>
+            Jurusan Teknik Pemesinan
+          </p>
+
+          <p class="mb-4">
+            2019 - 2022
+          </p>
+
+          <a href="Ijazahsmk.jpg"
+            target="_blank"
+            class="inline-block bg-mahogany-wood text-white px-5 py-2 rounded-xl hover:bg-black transition">
+
+            <i class="fa-solid fa-file-pdf mr-2"></i>
+            Lihat Ijazah
+
+          </a>
+
+        </div>
+
+        <!-- KULIAH -->
+        <div class="bg-transparent shadow-xl rounded-2xl p-6 border-l-8 border-black">
+
+          <h3 class="text-2xl font-bold">
+            STTI Sony Sugema
+          </h3>
+
+          <p>
+            Teknik Informatika
+          </p>
+
+          <p class="mb-4">
+            2023 - Sekarang
+          </p>
+
+          <button
+            class="bg-black text-white px-5 py-2 rounded-xl opacity-70 cursor-not-allowed">
+
+            <i class="fa-solid fa-clock mr-2"></i>
+            Masih Menempuh Pendidikan
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PENGALAMAN -->
+  <section id="pengalaman" class="py-20 bg-transparent">
+
+    <div class="container mx-auto px-6">
+
+      <h2 class="text-4xl font-bold text-center mb-12 text-white">
+        Pengalaman & Organisasi
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-8">
+
+        <!-- PENGALAMAN KERJA -->
+        <div class="bg-mahogany-dark text-white p-8 rounded-3xl shadow-2xl hover-card">
+
+          <div class="flex items-center gap-4 mb-8">
+            <i class="fa-solid fa-briefcase text-5xl text-mahogany-soft"></i>
+
+            <h3 class="text-3xl font-bold">
+              Pengalaman Kerja
+            </h3>
+          </div>
+
+          <!-- MARUICHI -->
+          <div class="mb-8 border-b border-white/20 pb-6">
+
+            <h4 class="text-2xl font-semibold mb-2">
+              PT. Maruichi Indonesia
+            </h4>
+
+            <p class="text-mahogany-soft mb-3">
+              Quality Control Assurance (QCA)
+            </p>
+
+            <p class="text-gray-300 mb-4">
+              2023 - Sekarang
+            </p>
+
+            <ul class="space-y-2 text-gray-200 mb-5">
+              <li>• Melakukan pengecekan kualitas material dan produk</li>
+              <li>• Memastikan produk sesuai standar kualitas perusahaan</li>
+              <li>• Mengontrol hasil produksi agar memenuhi spesifikasi</li>
+              <li>• Membuat laporan hasil pengecekan Quality Control</li>
+              <li>• Menangani defect dan ketidaksesuaian produk</li>
+              <li>• Berkoordinasi dengan tim produksi</li>
+            </ul>
+
+            <div class="flex flex-wrap gap-3">
+
+              <a href="paklaring-maruichi.pdf"
+                target="_blank"
+                class="bg-mahogany-soft hover:bg-transparent hover:text-mahogany-dark px-5 py-2 rounded-xl transition-all duration-300">
+
+                <i class="fa-solid fa-file-pdf mr-2"></i>
+                Paklaring
+
+              </a>
+
+              <a href="sertifikat-qca.jpg"
+                target="_blank"
+                class="border border-white hover:bg-transparent hover:text-mahogany-dark px-5 py-2 rounded-xl transition-all duration-300">
+
+                <i class="fa-solid fa-image mr-2"></i>
+                Sertifikat
+
+              </a>
+
+            </div>
+
+          </div>
+
+          <!-- ROKI -->
+          <div class="mb-8 border-b border-white/20 pb-6">
+
+            <h4 class="text-2xl font-semibold mb-2">
+              PT. ROKI Indonesia
+            </h4>
+
+            <p class="text-mahogany-soft mb-3">
+              Operator Produksi - Assembly
+            </p>
+
+            <p class="text-gray-300 mb-4">
+              22 Agustus 2022 - 15 Maret 2023
+            </p>
+
+            <ul class="space-y-2 text-gray-200">
+              <li>• Mengoperasikan proses assembly produksi</li>
+              <li>• Memastikan kualitas produk sesuai standar</li>
+              <li>• Menjaga target dan ketelitian produksi</li>
+            </ul><br>
+ <div class="flex flex-wrap gap-3">
+
+              <a href="roki.jpg"
+                target="_blank"
+                class="bg-mahogany-soft hover:bg-transparent hover:text-mahogany-dark px-5 py-2 rounded-xl transition-all duration-300">
+
+                <i class="fa-solid fa-file-pdf mr-2"></i>
+                Paklaring
+
+              </a>
+
+              <a href="roki.jpg"
+                target="_blank"
+                class="border border-white hover:bg-transparent hover:text-mahogany-dark px-5 py-2 rounded-xl transition-all duration-300">
+
+                <i class="fa-solid fa-image mr-2"></i>
+                Sertifikat
+
+              </a>
+
+            </div>
+          </div>
+
+          <!-- INDOCITRA -->
+          <div>
+
+            <h4 class="text-2xl font-semibold mb-2">
+              PT. Indocitra Widhitama Industries
+            </h4>
+
+            <p class="text-mahogany-soft mb-3">
+              Praktik Kerja Industri - Operator Produksi
+            </p>
+
+            <p class="text-gray-300 mb-4">
+              1 Maret - 2 Juni 2021
+            </p>
+
+            <ul class="space-y-2 text-gray-200">
+              <li>• Membantu proses produksi industri</li>
+              <li>• Belajar pengoperasian mesin industri</li>
+              <li>• Melatih disiplin dan kerjasama tim</li>
+            </ul><br>
+ <div class="flex flex-wrap gap-3">
+
+              <a href="paklaring-maruichi.pdf"
+                target="_blank"
+                class="bg-mahogany-soft hover:bg-transparent hover:text-mahogany-dark px-5 py-2 rounded-xl transition-all duration-300">
+
+                <i class="fa-solid fa-file-pdf mr-2"></i>
+                Paklaring
+
+              </a>
+
+              <a href="sertifikat-qca.jpg"
+                target="_blank"
+                class="border border-white hover:bg-transparent hover:text-mahogany-dark px-5 py-2 rounded-xl transition-all duration-300">
+
+                <i class="fa-solid fa-image mr-2"></i>
+                Sertifikat
+
+              </a>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ORGANISASI -->
+        <div class="bg-mahogany-brown text-white p-8 rounded-3xl shadow-2xl hover-card">
+
+          <div class="flex items-center gap-4 mb-8">
+            <i class="fa-solid fa-users text-5xl text-mahogany-soft"></i>
+
+            <h3 class="text-3xl font-bold">
+              Pengalaman Organisasi
+            </h3>
+          </div>
+
+          <div class="space-y-5">
+
+            <div class="bg-transparent/10 p-5 rounded-2xl">
+              <h4 class="text-xl font-semibold mb-2">
+                Ekstrakurikuler Voli
+              </h4>
+
+              <p class="text-gray-200">
+                SMPN 1 Lemahabang
+              </p>
+            </div>
+
+            <div class="bg-transparent/10 p-5 rounded-2xl">
+              <h4 class="text-xl font-semibold mb-2">
+                Sekretaris OSIS
+              </h4>
+
+              <p class="text-gray-200">
+                SMK PGRI Telagasari
+              </p>
+            </div>
+
+            <div class="bg-transparent/10 p-5 rounded-2xl">
+              <h4 class="text-xl font-semibold mb-2">
+                Leader Colourguard Marchingband
+              </h4>
+
+              <p class="text-gray-200">
+                SMK PGRI Telagasari
+              </p>
+            </div>
+
+            <div class="bg-transparent/10 p-5 rounded-2xl">
+              <h4 class="text-xl font-semibold mb-2">
+                Sekretaris Ekstrakurikuler Paskibra
+              </h4>
+
+              <p class="text-gray-200">
+                SMK PGRI Telagasari
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- HOBI -->
+  <section id="hobi" class="py-20 bg-transparent">
+
+    <div class="container mx-auto px-6">
+
+      <h2 class="text-4xl font-bold text-center mb-12">
+        Hobi Badminton 🏸
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+
+        <div>
+
+          <p class="text-lg leading-relaxed mb-6">
+            Badminton membantu saya menjaga fokus,
+            stamina, disiplin, dan semangat kompetitif
+            dalam kehidupan sehari-hari.
+          </p>
+
+          <div class="flex gap-3 flex-wrap">
+
+            <span class="bg-mahogany-dark text-white px-4 py-2 rounded-full">
+              Fokus
+            </span>
+
+            <span class="bg-mahogany-brown text-white px-4 py-2 rounded-full">
+              Disiplin
+            </span>
+
+            <span class="bg-mahogany-wood text-white px-4 py-2 rounded-full">
+              Kerjasama Tim
+            </span>
+
+          </div>
+
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+
+          <img
+  src="maruichicup2.jpg"
+  alt="Foto Tina"
+  class="w-full h-80 object-cover rounded-2xl shadow-xl hover:scale-105 transition-all duration-300"
+/>
+
+  <img
+  src="ligamhs.jpg"
+  alt="Foto Tina"
+  class="w-full h-80 object-cover rounded-2xl shadow-xl hover:scale-105 transition-all duration-300"
+/>
+
+<img
+  src="smecup.jpg"
+  alt="Foto Tina"
+  class="w-full h-80 object-cover rounded-2xl shadow-xl hover:scale-105 transition-all duration-300"
+/>
+<img
+  src="maruichicup.jpg"
+  alt="Foto Tina"
+  class="w-full h-80 object-cover rounded-2xl shadow-xl hover:scale-105 transition-all duration-300"
+/>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+    <!-- DOKUMENTASI MC -->
+  <section id="mc" class="py-20 bg-transparent">
+
+    <div class="container mx-auto px-6">
+
+      <h2 class="text-4xl font-bold text-center mb-12">
+        Dokumentasi MC 🎤
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+
+        <!-- DESKRIPSI -->
+        <div>
+
+          <p class="text-lg leading-relaxed mb-6">
+            Selain aktif bekerja dan kuliah, saya juga memiliki pengalaman
+            sebagai Master of Ceremony (MC) dalam berbagai kegiatan sekolah,
+            organisasi, maupun acara umum.
+          </p>
+
+          <p class="text-lg leading-relaxed mb-6">
+            Pengalaman ini membantu saya meningkatkan kemampuan komunikasi,
+            public speaking, kepercayaan diri, dan kemampuan bekerja sama
+            dengan banyak orang.
+          </p>
+
+          <div class="flex gap-3 flex-wrap">
+
+            <span class="bg-mahogany-dark text-white px-4 py-2 rounded-full">
+              Public Speaking
+            </span>
+
+            <span class="bg-mahogany-brown text-white px-4 py-2 rounded-full">
+              Leadership
+            </span>
+
+            <span class="bg-mahogany-wood text-white px-4 py-2 rounded-full">
+              Komunikatif
+            </span>
+
+          </div>
+
+        </div>
+
+        <!-- FOTO MC -->
+        <div class="grid grid-cols-2 gap-4">
+
+          <img
+            src="mc1.jpg"
+            alt="Dokumentasi MC"
+            class="w-full h-80 object-cover rounded-2xl shadow-xl hover:scale-105 transition-all duration-300"
+          />
+
+          <img
+            src="mc2.jpg"
+            alt="Dokumentasi MC"
+            class="w-full h-80 object-cover rounded-2xl shadow-xl hover:scale-105 transition-all duration-300"
+          />
+
+          <img
+            src="mc3.jpg"
+            alt="Dokumentasi MC"
+            class="w-full h-80 object-cover rounded-2xl shadow-xl hover:scale-105 transition-all duration-300"
+          />
+
+          <img
+            src="mc1.jpg"
+            alt="Dokumentasi MC"
+            class="w-full h-80 object-cover rounded-2xl shadow-xl hover:scale-105 transition-all duration-300"
+          />
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+ <!-- PROYEK -->
+<section id="proyek" class="py-20 bg-transparent">
+
+<div class="container mx-auto px-6">
+
+<h2 class="text-4xl font-bold text-center mb-12">
+Proyek Web 💻
+</h2>
+
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+<!-- Project 1 -->
+<a href="https://tinatn641-afk.github.io/liga-maruichi-cup2025/"
+target="_blank"
+class="bg-mahogany-dark rounded-3xl overflow-hidden shadow-2xl hover-card">
+
+<img src="beranda.png"
+class="w-full h-52 object-cover"
+alt="Project">
+
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">
+Liga Maruichi Cup
+</h3>
+
+<p class="text-gray-300 mb-4">
+Website pengelolaan inventaris barang.
+</p>
+
+<div class="flex gap-2 flex-wrap">
+<span class="bg-white/10 px-3 py-1 rounded-full">HTML</span>
+<span class="bg-white/10 px-3 py-1 rounded-full">CSS</span>
+<span class="bg-white/10 px-3 py-1 rounded-full">JavaScript</span>
+</div>
+
+</div>
+</a>
+
+<!-- Project 2 -->
+<a href="https://tinatn641-afk.github.io/slipgaji/" target="_blank"
+class="bg-mahogany-dark rounded-3xl overflow-hidden shadow-2xl hover-card">
+
+<img src="slip.png"
+class="w-full h-52 object-cover">
+
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">
+Slip Gaji Generator
+</h3>
+
+<p class="text-gray-300 mb-4">
+Sistem penjualan produk online.
+</p>
+</div>
+</a>
+
+<!-- Project 3 -->
+<a href="https://qualitysystemptmaruichi.wuaze.com/" target="_blank"
+class="bg-mahogany-dark rounded-3xl overflow-hidden shadow-2xl hover-card">
+
+<img src="qcsystem.png"
+class="w-full h-52 object-cover">
+
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">
+QC System
+</h3>
+
+<p class="text-gray-300 mb-4">
+Website Property
+</p>
+</div>
+</a>
+
+<!-- Project 4 -->
+<a href="https://tinatn641-afk.github.io/proferty/" target="_blank"
+class="bg-mahogany-dark rounded-3xl overflow-hidden shadow-2xl hover-card">
+
+<img src="property.png"
+class="w-full h-52 object-cover">
+
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">
+Sistem Absensi
+</h3>
+
+<p class="text-gray-300 mb-4">
+Web Visitor
+</p>
+</div>
+</a>
+
+<!-- Project 5 -->
+<a href="https://tinatn641-afk.github.io/tamumaruichi/" target="_blank"
+class="bg-mahogany-dark rounded-3xl overflow-hidden shadow-2xl hover-card">
+
+<img src="visitor.png"
+class="w-full h-52 object-cover">
+
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">
+Website Company Profile
+</h3>
+
+<p class="text-gray-300 mb-4">
+Profil perusahaan berbasis web.
+</p>
+</div>
+</a>
+
+<!-- Project 6 -->
+<a href="https://tinatn641-afk.github.io/forecast-suhu/" target="_blank"
+class="bg-mahogany-dark rounded-3xl overflow-hidden shadow-2xl hover-card">
+
+<img src="suhu.png"
+class="w-full h-52 object-cover">
+
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">
+Forecast Suhu
+</h3>
+
+<p class="text-gray-300 mb-4">
+Aplikasi kasir digital.
+</p>
+</div>
+</a>
+
+<!-- Project 7 -->
+<a href="https://github.com/" target="_blank"
+class="bg-mahogany-dark rounded-3xl overflow-hidden shadow-2xl hover-card">
+
+<img src="project7.jpg"
+class="w-full h-52 object-cover">
+
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">
+Website Perpustakaan
+</h3>
+
+<p class="text-gray-300 mb-4">
+Pengelolaan buku perpustakaan.
+</p>
+</div>
+</a>
+
+<!-- Project 8 -->
+<a href="https://github.com/" target="_blank"
+class="bg-mahogany-dark rounded-3xl overflow-hidden shadow-2xl hover-card">
+
+<img src="project8.jpg"
+class="w-full h-52 object-cover">
+
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">
+Landing Page Produk
+</h3>
+
+<p class="text-gray-300 mb-4">
+Halaman promosi produk.
+</p>
+</div>
+</a>
+
+<!-- Project 9 -->
+<a href="https://github.com/" target="_blank"
+class="bg-mahogany-dark rounded-3xl overflow-hidden shadow-2xl hover-card">
+
+<img src="project9.jpg"
+class="w-full h-52 object-cover">
+
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">
+Sistem Data Karyawan
+</h3>
+
+<p class="text-gray-300 mb-4">
+Manajemen data pegawai.
+</p>
+</div>
+</a>
+
+<!-- Project 10 -->
+<a href="https://github.com/" target="_blank"
+class="bg-mahogany-dark rounded-3xl overflow-hidden shadow-2xl hover-card">
+
+<img src="project10.jpg"
+class="w-full h-52 object-cover">
+
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">
+Website Portofolio
+</h3>
+
+<p class="text-gray-300 mb-4">
+Website personal portofolio.
+</p>
+</div>
+</a>
+
+</div>
+</div>
+</section>
+
+          </div>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- KONTAK -->
+  <section id="kontak"
+    class="py-20 bg-gradient-to-br from-black via-mahogany-dark to-mahogany-brown text-white">
+
+    <div class="container mx-auto px-6 text-center">
+
+      <h2 class="text-4xl font-bold mb-6">
+        Media Sosial 🌐
+      </h2>
+
+      <p class="mb-10 text-lg text-gray-300">
+        Terhubung dengan saya melalui platform berikut
+      </p>
+
+     <div class="flex justify-center gap-6 flex-wrap">
+
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/tiinaa_tn01"
+    target="_blank"
+    class="glass p-6 rounded-2xl hover:scale-110 transition-all duration-300">
+
+    <i class="fab fa-instagram text-5xl"></i>
+    <p class="mt-3">Instagram</p>
+
+  </a>
+
+  <!-- GitHub -->
+  <a href="https://github.com/tinatn641-afk"
+    target="_blank"
+    class="glass p-6 rounded-2xl hover:scale-110 transition-all duration-300">
+
+    <i class="fab fa-github text-5xl"></i>
+    <p class="mt-3">GitHub</p>
+
+  </a>
+
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/tina-tn"
+    target="_blank"
+    class="glass p-6 rounded-2xl hover:scale-110 transition-all duration-300">
+
+    <i class="fab fa-linkedin text-5xl"></i>
+    <p class="mt-3">LinkedIn</p>
+
+  </a>
+
+</div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-center text-gray-400 py-6">
+    © 2026 Tina Portfolio | All Rights Reserved
+  </footer>
+
+</body>
+</html>
